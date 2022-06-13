@@ -5,29 +5,64 @@
   </head>
   <body>
     <main id="main-doc">
-      <section class="main-section" id="Introduction">
-        <header><h1>Introduction</h1><header>
-          <p>CSS is the mechanism that we use to describe the styling of web documents, such as those written in HTML. It is a style sheet language that allows you to pick HTML elements and customize their appearance.</p>
-          <code>p {
-            color: purple
-            }
-          </code>
-          <p>The code above turns the text in a paragraph purple. This is one of the many things you can do with CSS. This guide will help you get started on working with CSS. </p>
-      </section>
-      <section class="main-section" id="Getting Started">
-        <header><h1>Getting Started</h1><header>
-          <p>In order to see CSS in action, we will need both the HTML file and the CSS file. Download the files linked, and make sure they are in the same folder.</p>
-          <p>Open your <code>index.html</code> file. If some of the text you see is purple, then you are on the right track.</p>
-      </section>
-      <section class="main-section" id="Syntax">
-        <header><h1>Syntax</h1><header>
-      </section>
-      <section class="main-section" id="Selectors">
-        <header><h1>Selectors</h1><header>
-      </section>
-      <section class="main-section" id="Properties">
-        <header><h1>Properties</h1><header>
-      </section>
-    </main>
+  <section class="main-section" id="Introduction">
+    <header><h1>Introduction</h1><header>
+      <p>CSS is the mechanism that we use to describe the styling of web documents, such as those written in HTML. It is a style sheet language that allows you to pick HTML elements and customize their appearance.</p>
+      <code>p {<br>color: purple;<br>}</code>
+      <p>The code above turns the text in a paragraph purple. This is one of the many things you can do with CSS. This guide will help you get started on working with CSS. </p>
+    </section>
+    <section class="main-section" id="Getting_Started">
+      <header><h1>Getting Started</h1><header>
+        <p>In order to see CSS in action, we will need both the HTML file and the CSS file. Download the files linked, and make sure they are in the same folder.</p>
+        <p>Open your <code>index.html</code> file. If some of the text you see is purple, then you are on the right track.</p>
+    </section>
+    <section class="main-section" id="Syntax">
+      <header><h1>Syntax</h1><header>
+        <p>A CSS rule consists of a CSS selector and one or more CSS declarations.</p>
+        <code>p {<br>color: purple;<br>}</code>
+        <p>In the line of code above, the selector is <code>p</code>, which is targeting all paragraph elements. The declaration is <code>color: purple</code>, with <code>color</code> as a property, and <code>purple</code> as the value of the property previously mentioned.</p>
+    </section>
+    <section class="main-section" id="Properties">
+      <header><h1>Properties</h1><header>
+        <p>Let's add another declaration. There are many choices for properties. For example:</p>
+        <ul>
+          <li><code>background-color</code> gives a color to the background of an element</li>
+          <li><code>border-style</code> specifies the border for an element</li>
+          <li><code>font-family</code> specifies the font to be used for the text in an element</li>
+          <li><code>overflow</code> controls what happens when there is too much content to fit in an area</li>
+          <li><code>opacity</code> specifies how transparent an element is</li>
+        </ul>
+          <p>Let's underline our paragraph text. We will be using the property <code>text-decoration</code> with a value of <code>underline</code>. It should look like this:</p>
+        <code>p {<br>color: purple;<br>text-decoration: underline;<br>}</code>
+        <p>If you save <code>index.css</code> and open the <code>index.html</code> file, the purple text should now be underlined.
+        <p>Here is <a href="https://www.w3schools.com/cssref/">a reference list</a> of CSS properties. </p>
+    </section>
+    <section class="main-section" id="Basic_Selectors">
+      <header><h1>Basic Selectors</h1><header>
+        <p>There are different types of CSS Selectors. This page will cover the basic selectors.</p>
+        <header><h2>Element Selectors</h2></header>
+        <p>Element selectors allow you to apply CSS to the HTML element named.</p>
+        <code>p {<br>color: purple;<br>}</code>
+        <p>The code above is an example of an element selector, where all <code>p</code> elements will have purple text.</p>
+        <p>Here is <a href="https://www.w3schools.com/cssref/css_selectors.asp">a reference list</a> of CSS selectors.</p>
+        <header><h2>The Universal Selector</h2></header>
+        <p>The universal selector allows you to apply CSS to all HTML elements. Use the asterisk character (*).</p>
+        <code>* {<br>text-align: center;<br>}</code>
+        <p>The code above affects all HTML elements and makes sure text is center aligned.</p>
+        <header><h2>Class Selectors</h2></header>
+        <p>Class selectors allow you to apply CSS to HTML elements that have a matching class name. Use the period character (.) before the class name.</p>
+        <code>.animal-header {<br>text-transform: capitalize;<br>}</code>
+        <p>The code above is an example of a class selector selector, where all HTML elements with <code>class="animal-header"</code> will have text using only capitalized letters.</p>
+        <p>Please note that if an HTML element has more than one class, it will use CSS from all of its classes.</p>
+        <header><h2>Id Selectors</h2></header>
+        <p>Id selectors allow you to apply CSS to an HTML element with a matching id. Use the hash character (#) before the id name.</p>
+        <code>#cat-info {<br>color: pink;<br>}</code>
+        <p>The code above is an example of an id selector, where the HTML element with <code>id="cat-info"</code> will have pink text.</p>
+        <header><h2>Multiple Selectors</h2></header>
+        <p>If you would like to apply the same CSS to multiple elements but not all, separate the names of the elements with a comma (,).</p>
+        <code>h1, h2 {<br>font-style: italic;<br>}</code>
+        <p>The code above will make <code>h1</code> and <code>h2</code> elements have italic text.</p>
+    </section>
+  </main>
   </body>
 </html>
