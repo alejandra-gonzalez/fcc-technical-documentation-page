@@ -1,11 +1,12 @@
 #navbar {
     position: fixed;
-    min-width: 290px;
+    min-width: 190px;
     top: 0px;
     left: 0px;
-    width: 300px;
     height: 100%;
+    display: auto;
 }
+
 #title, #navbar a {
     display: block;
     text-decoration: none;
@@ -16,3 +17,67 @@
     margin-left: 180px;
     padding: 0px 10px;
 }
+
+#menu-button {
+    margin-top: -20px;
+    margin-right: 15px;
+    text-align: right;
+    cursor: pointer;
+}
+
+#menu-button:hover{
+    background-color: blueviolet;
+}
+
+#top-bar {
+    margin-left: -10px;
+    width: 100%;
+    height: 30px;
+    position: fixed;
+    display: none;
+    text-align: center;
+    padding: 15px 0px 0px 0px;
+}
+
+#close-menu {
+    margin-top: -20px;
+    margin-left: 15px;
+    text-align: left;
+    display: none;
+}
+
+ @media screen and (max-width: 700px) {
+     #navbar {
+         height: auto;
+         display: none;
+         background-color: chocolate;
+         margin-top: 40px;
+         width: 100%;
+     }
+
+     #top-bar{
+         display: block;
+         background-color:aqua;
+     }
+     
+     #navbar a {
+         float: left;
+         width: 100%;
+        }
+
+     #main-doc {
+         margin: -10px 0px;
+         padding: 40px 10px;
+         background-color: blue;
+     }
+
+     #close-menu:hover{
+        background-color: blueviolet;
+    }
+
+    #title{
+        display: none;
+    }
+    @media screen and (max-width: 700px) {
+    }
+   }
