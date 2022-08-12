@@ -81,3 +81,12 @@
     @media screen and (max-width: 700px) {
     }
    }
+
+   #navbar a:link, #navbar a:visited {
+    color: #337ab7;
+   }
+
+   #navbar a:hover, #navbar a:active {
+    color: #23527c;
+    text-decoration: underline;
+   }
