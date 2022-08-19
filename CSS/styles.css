@@ -82,7 +82,7 @@
     }
    }
 
-   #navbar a:link, #navbar a:visited {
+   #navbar a:link, #navbar a:visited, #title {
     color: #337ab7;
    }
 
