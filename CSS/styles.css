@@ -78,15 +78,45 @@
     #title{
         display: none;
     }
-    @media screen and (max-width: 700px) {
+
+   }
+
+   @media screen and (min-width: 700px) {
+    #navbar {
+        display: block!important;
     }
    }
 
-   #navbar a:link, #navbar a:visited, #title {
+   #navbar a:link, #navbar a:visited, .main-section a:link, .main-section a:visited{
     color: #337ab7;
    }
 
-   #navbar a:hover, #navbar a:active {
+   .main-section a:link, .main-section a:visited {
+    text-decoration: none;
+   }
+
+   #navbar a:hover, #navbar a:active, .main-section a:hover, .main-section a:active {
     color: #23527c;
     text-decoration: underline;
+   }
+
+   h1 {
+    color: #272727;
+    border-bottom: 5px solid #7a869a;
+   }
+
+   h1, h2, #title {
+    font-family: Arial, sans-serif;
+   }
+
+   .main-section h1 {
+    font-size: 30px;
+   }
+
+   #title {
+    font-size: 20px;
+   }
+
+   #Introduction {
+    padding-top: 7px;
    }
